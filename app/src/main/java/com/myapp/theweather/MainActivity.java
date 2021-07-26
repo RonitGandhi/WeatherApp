@@ -60,9 +60,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getTemp() {
-        String KEY = "e9bbc869ec2bb4fa71126ca04f2fdc57";
+       // String KEY = "YOUR_API_KEY";
         String City = city_txt.getText().toString();
-        String URL = "https://api.openweathermap.org/data/2.5/weather?q="+City+"&appid=e9bbc869ec2bb4fa71126ca04f2fdc57";
+        String URL = "https://api.openweathermap.org/data/2.5/weather?q="+City+"&appid=YOUR_API_KEY";
         RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, URL, null, new Response.Listener<JSONObject>() {
